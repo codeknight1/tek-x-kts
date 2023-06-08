@@ -1,0 +1,25 @@
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 30% 50%;
+
+   .upper {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        // img style
+        .svg-img {
+            @include logo;
+         }
+   }
+
+    .lower {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

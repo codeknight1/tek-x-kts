@@ -1,0 +1,136 @@
+@import "color/color";
+// @import "defult/defult";
+@import "mixin/mixin";
+@import "media/media";
+@import "navbar/navbar";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+
+// general style
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20%  80%;
+   
+
+
+    // upper style 
+    .upper {
+        background: $light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .img {
+             .center_img {
+              width: 15rem;
+              height: 15rem;
+             }
+        }
+         
+        .dp_img {
+            position: absolute;
+            top: 16%;
+            z-index: 1;
+            left: 3%;
+                 img {
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 50%;
+                    border: .2rem solid $dark;
+                   
+         
+         
+         }
+         }
+}
+
+
+
+// lower style 
+
+.lower {
+    height: 100vh;    
+    position: relative;
+    background: $dark;
+    .edit {
+        position: absolute;
+        top: 1rem;
+            right: 0;
+        a {
+            color: $light;
+            border: .1rem solid #fff;
+            padding: .4rem .8rem;
+            margin: 1rem;
+            border-radius: 5rem;
+            outline: none;
+            
+        }
+    }
+    .handle {
+        margin: 3rem 0 0 1rem;
+       
+        p,a {
+          color: $light;
+          padding: .5rem;
+        }
+         .name {
+             font-weight: bold;
+         }
+         .biotext {
+             padding: 1rem .5rem;
+         }
+         .icons {
+            a {
+               i {
+                margin: .5rem 0 0 0;
+               }
+            //    .bx-map {
+                   
+            //    }
+            }
+         }
+         .cover {
+            //  height: 100vh;
+            //  p {
+            //      padding: 0;
+            //  }
+            form {
+                p {
+                    margin-top: 1rem; 
+                }
+                .certification{
+                    color: #000;
+                }
+                margin-top: 1rem;
+                select, input {
+                    background: $dark;
+                    width: 90%;
+                    height: 2rem;
+                    margin: .5rem 0;
+                    border: none;
+                    border-bottom: 1px solid gray;
+                    padding: 0;
+                    @include media('>=desktop') {
+                      border: none;
+                      border-bottom: 1px solid gray;
+                      padding: 0;
+                     }
+                 }
+            } 
+         }
+    }
+}
+}

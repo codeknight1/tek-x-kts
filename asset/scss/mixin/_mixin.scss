@@ -1,0 +1,39 @@
+// bottons mixin
+@mixin buttons(){
+    padding: 1rem 2rem;
+    border-radius: .2rem;
+    outline: none;
+    border: 1px solid $dark;
+    margin: 1rem;
+}
+@mixin buttons-resp(){
+    padding: .7rem 1.3rem;
+   
+}
+
+// logo mixin
+
+@mixin logo(){
+            width: 9em;
+            height: 9em;
+             
+}
+@mixin logo-resp(){
+    width: 6em;
+    height: 6em;
+     
+}
+@mixin font() {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+
+// >=1220px
+// >=992px
+// >=768px
+// >=576px
+
+

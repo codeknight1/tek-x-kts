@@ -1,0 +1,69 @@
+@import "color/color";
+@import "defult/defult";
+@import "mixin/mixin";
+@import "snippet/snippet";
+@import "media/media";
+@import "navbar/navbar";
+
+
+
+
+
+
+.wrapper {
+    .svg {
+        @include media('>=desktop') {
+            display: none;
+         }
+    }
+    // upper
+    .upper{
+        .svg-img {
+            @include media('<=SMphone') {
+             @include logo-resp;
+             }
+            
+        }
+}
+// lower
+.lower {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    // buttons control
+
+    .bottons_control{
+        margin-top: 5rem;
+        @include media('>=desktop') {
+            margin-top: 1rem;
+        }
+        a{
+            @include buttons;
+            @include font;
+            @include media('<=SMphone') {
+                padding: 0.7rem 1.3rem;
+                margin: .6rem;
+               }
+            
+        }
+       
+        
+        // sign in button 
+        .signin {
+           
+            background-color: $dark;
+            color: $light;
+          
+        }
+        .signup {
+          
+            background-color: $light;
+            color: $dark;
+        }
+    }
+
+}
+   
+}
